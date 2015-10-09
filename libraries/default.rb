@@ -30,7 +30,7 @@ module Firefox
   end
 
   def firefox_latest
-    open(firefox_base_uri, ssl_verify_mode: OpenSSL::SSL::VERIFY_NONE).read
+    open(firefox_base_uri, :ssl_verify_mode => OpenSSL::SSL::VERIFY_NONE).read
   end
 
   def firefox_package(version)
